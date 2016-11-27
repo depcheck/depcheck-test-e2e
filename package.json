@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "depcheck": "depcheck .",
     "lint": "eslint .",
     "test": "ava e2e.js"
   },

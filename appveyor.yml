@@ -10,6 +10,7 @@ install:
   - npm install
 
 test_script:
+  - npm run depcheck
   - npm run lint
   - npm run test
 
