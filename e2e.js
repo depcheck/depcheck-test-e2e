@@ -21,7 +21,7 @@ test('find unused dependencies', t =>
   testE2E(t, 'unused', ['Unused dependencies', '* unused-dep']));
 
 test('find missing dependencies', t =>
-  testE2E(t, 'missing', ['Missing dependencies', '* missing-dep']));
+  testE2E(t, 'missing', ['Missing dependencies', '* missing-dep: ./index.js']));
 
 test('output error exit code when spawned', (t) => {
   const result = spawnSync(node, [depcheck, './not/exist/folder']);
